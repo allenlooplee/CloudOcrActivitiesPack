@@ -1,1 +1,1 @@
-# CloudOcrActivitiesPack
+# Cloud OCR Activities Pack
