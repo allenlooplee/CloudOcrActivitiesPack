@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29709.97
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Cloud.Ocr", "Cloud.Ocr", "{8EC095EE-24A4-41F0-B5B7-70304CB2C3AF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cloud.Ocr", "Cloud.Ocr\Cloud.Ocr\Cloud.Ocr.csproj", "{5061E32C-F0B2-43AE-B2A0-15F9ADF0EC47}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cloud.Ocr.Activities", "Cloud.Ocr\Cloud.Ocr.Activities\Cloud.Ocr.Activities.csproj", "{35D41BC9-59FD-4D69-8979-2FD5465157A5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cloud.Ocr.Activities.Design", "Cloud.Ocr\Cloud.Ocr.Activities.Design\Cloud.Ocr.Activities.Design.csproj", "{13DA67E9-DF14-4B9B-B30A-ACA0CE7FE194}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{D55435B8-3272-42B6-B52B-F0DCCBA06C3D}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "UiPath.Shared.Activities", "Shared\UiPath.Shared.Activities\UiPath.Shared.Activities.shproj", "{4546856D-EA50-45C6-9419-EEEACB5A80AA}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "UiPath.Shared.Activities.Design", "Shared\UiPath.Shared.Activities.Design\UiPath.Shared.Activities.Design.shproj", "{DF9C43F0-ADD3-4FBF-995E-84B92F9CBF25}"
+EndProject
+Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		Shared\UiPath.Shared.Activities\UiPath.Shared.Activities.projitems*{4546856d-ea50-45c6-9419-eeeacb5a80aa}*SharedItemsImports = 13
+		Shared\UiPath.Shared.Activities.Design\UiPath.Shared.Activities.Design.projitems*{df9c43f0-add3-4fbf-995e-84b92f9cbf25}*SharedItemsImports = 13
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5061E32C-F0B2-43AE-B2A0-15F9ADF0EC47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5061E32C-F0B2-43AE-B2A0-15F9ADF0EC47}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5061E32C-F0B2-43AE-B2A0-15F9ADF0EC47}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5061E32C-F0B2-43AE-B2A0-15F9ADF0EC47}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35D41BC9-59FD-4D69-8979-2FD5465157A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35D41BC9-59FD-4D69-8979-2FD5465157A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35D41BC9-59FD-4D69-8979-2FD5465157A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35D41BC9-59FD-4D69-8979-2FD5465157A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13DA67E9-DF14-4B9B-B30A-ACA0CE7FE194}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13DA67E9-DF14-4B9B-B30A-ACA0CE7FE194}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13DA67E9-DF14-4B9B-B30A-ACA0CE7FE194}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13DA67E9-DF14-4B9B-B30A-ACA0CE7FE194}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5061E32C-F0B2-43AE-B2A0-15F9ADF0EC47} = {8EC095EE-24A4-41F0-B5B7-70304CB2C3AF}
+		{35D41BC9-59FD-4D69-8979-2FD5465157A5} = {8EC095EE-24A4-41F0-B5B7-70304CB2C3AF}
+		{13DA67E9-DF14-4B9B-B30A-ACA0CE7FE194} = {8EC095EE-24A4-41F0-B5B7-70304CB2C3AF}
+		{4546856D-EA50-45C6-9419-EEEACB5A80AA} = {D55435B8-3272-42B6-B52B-F0DCCBA06C3D}
+		{DF9C43F0-ADD3-4FBF-995E-84B92F9CBF25} = {D55435B8-3272-42B6-B52B-F0DCCBA06C3D}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3C7D8CFF-EE38-4365-9E25-E12847AF64CF}
+	EndGlobalSection
+EndGlobal
