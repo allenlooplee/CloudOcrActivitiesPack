@@ -70,6 +70,24 @@ namespace Cloud.Ocr.Activities.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Returns the recognized values of a bank card..
+        /// </summary>
+        public static string BankCardActivity_Description {
+            get {
+                return ResourceManager.GetString("BankCardActivity_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to BankCardActivity.
+        /// </summary>
+        public static string BankCardActivity_DisplayName {
+            get {
+                return ResourceManager.GetString("BankCardActivity_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to The file path to the image for recognition..
         /// </summary>
         public static string BaseOcrActivity_ImagePath_Description {

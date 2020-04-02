@@ -30,6 +30,7 @@
     <PackageVersion>0.1.0</PackageVersion>
   </PropertyGroup>
   <ItemGroup>
+    <None Remove="Designers\BankCardActivityDesigner.xaml" />
     <None Remove="Designers\OcrScopeDesigner.xaml" />
   </ItemGroup>
   <!-- Package Icon -->
@@ -76,6 +77,9 @@
       <Generator>XamlIntelliSenseFileGenerator</Generator>
       <SubType>Designer</SubType>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Page>
+    <Page Include="Designers\BankCardActivityDesigner.xaml">
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
     </Page>
     <Page Include="Designers\OcrScopeDesigner.xaml">
       <Generator>XamlIntelliSenseFileGenerator</Generator>
