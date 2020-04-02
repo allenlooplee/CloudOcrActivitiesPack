@@ -1,8 +1,6 @@
-﻿using System.Activities.Presentation.Metadata;
+﻿using Cloud.Ocr.Activities.Design.Properties;
+using System.Activities.Presentation.Metadata;
 using System.ComponentModel;
-using System.ComponentModel.Design;
-using Cloud.Ocr.Activities.Design.Designers;
-using Cloud.Ocr.Activities.Design.Properties;
 
 namespace Cloud.Ocr.Activities.Design
 {
