@@ -149,10 +149,6 @@
     <value>Authentication</value>
     <comment>category</comment>
   </data>
-  <data name="Common_Category" xml:space="preserve">
-    <value>Common</value>
-    <comment>category</comment>
-  </data>
   <data name="Input_Category" xml:space="preserve">
     <value>Input</value>
     <comment>category</comment>
@@ -182,11 +178,23 @@
     <comment>error message; {0} &amp; {1} are complementary properties</comment>
   </data>
   <data name="OcrScope_DisplayName" xml:space="preserve">
-    <value>OcrScope</value>
+    <value>OCR Scope</value>
     <comment>activity name</comment>
   </data>
   <data name="OcrScope_Description" xml:space="preserve">
     <value>Contains and authenticates all Ccint OCR activities.</value>
     <comment>activity description</comment>
+  </data>
+  <data name="BaseOcrActivity_ImagePath_Description" xml:space="preserve">
+    <value>The file path to the image for recognition.</value>
+  </data>
+  <data name="BaseOcrActivity_ImagePath_DisplayName" xml:space="preserve">
+    <value>ImagePath</value>
+  </data>
+  <data name="BaseOcrActivity_Result_Description" xml:space="preserve">
+    <value>The result of the recognition in the form of JSON.</value>
+  </data>
+  <data name="BaseOcrActivity_Result_DisplayName" xml:space="preserve">
+    <value>Result</value>
   </data>
 </root>
