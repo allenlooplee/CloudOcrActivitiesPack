@@ -7,6 +7,8 @@ using System.ComponentModel;
 using Cloud.Ocr.Activities.Properties;
 using UiPath.Shared.Activities;
 using UiPath.Shared.Activities.Localization;
+using Cloud.Ocr.Contracts;
+using Cloud.Ocr.Models;
 
 namespace Cloud.Ocr.Activities
 {
@@ -68,6 +70,8 @@ namespace Cloud.Ocr.Activities
         protected override async Task<Action<NativeActivityContext>> ExecuteAsync(NativeActivityContext  context, CancellationToken cancellationToken)
         {
             // Inputs
+            IOcrClient ocrClient = new MockOcrClient();
+            _objectContainer.Add(ocrClient);
 
             return (ctx) => {
                 // Schedule child activities
