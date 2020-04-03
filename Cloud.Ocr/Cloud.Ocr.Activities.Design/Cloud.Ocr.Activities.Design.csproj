@@ -8,13 +8,13 @@
   <!-- Package Metadata -->
   <PropertyGroup>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
-    <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
-    <Description>This package was generated using the UiPath VS Extension.</Description>
-    <Authors>Company</Authors>
-    <Company>Company</Company>
-    <Copyright>@ 2020 Company</Copyright>
-    <PackageTags>UiPath Activit𝗒</PackageTags>
-    <PackageProjectUrl>https://docs.uipath.com/integrations/docs/how-to-create-activities</PackageProjectUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <Description>Cloud OCR Activities Pack for UiPath</Description>
+    <Authors>Allen Lee</Authors>
+    <Company>Allen Lee</Company>
+    <Copyright>@ 2020 Allen Lee</Copyright>
+    <PackageTags>UiPath Activit𝗒 OCR</PackageTags>
+    <PackageProjectUrl>https://github.com/allenlooplee/CloudOcrActivitiesPack</PackageProjectUrl>
     <PackageIconUrl>https://raw.githubusercontent.com/NuGet/Samples/master/PackageIconNuspecExample/icon.png</PackageIconUrl>
     <PackageIcon>packageIcon.png</PackageIcon>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
