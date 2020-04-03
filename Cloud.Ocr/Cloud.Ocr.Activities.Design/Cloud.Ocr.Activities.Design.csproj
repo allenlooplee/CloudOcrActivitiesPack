@@ -8,13 +8,13 @@
   <!-- Package Metadata -->
   <PropertyGroup>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
-    <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
-    <Description>This package was generated using the UiPath VS Extension.</Description>
-    <Authors>Company</Authors>
-    <Company>Company</Company>
-    <Copyright>@ 2020 Company</Copyright>
-    <PackageTags>UiPath Activit𝗒</PackageTags>
-    <PackageProjectUrl>https://docs.uipath.com/integrations/docs/how-to-create-activities</PackageProjectUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <Description>Cloud OCR Activities Pack for UiPath</Description>
+    <Authors>Allen Lee</Authors>
+    <Company>Allen Lee</Company>
+    <Copyright>@ 2020 Allen Lee</Copyright>
+    <PackageTags>UiPath Activit𝗒 OCR</PackageTags>
+    <PackageProjectUrl>https://github.com/allenlooplee/CloudOcrActivitiesPack</PackageProjectUrl>
     <PackageIconUrl>https://raw.githubusercontent.com/NuGet/Samples/master/PackageIconNuspecExample/icon.png</PackageIconUrl>
     <PackageIcon>packageIcon.png</PackageIcon>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -29,6 +29,10 @@
   <PropertyGroup Condition="'$(Configuration)' == 'Release'">
     <PackageVersion>0.1.0</PackageVersion>
   </PropertyGroup>
+  <ItemGroup>
+    <None Remove="Designers\BankCardActivityDesigner.xaml" />
+    <None Remove="Designers\OcrScopeDesigner.xaml" />
+  </ItemGroup>
   <!-- Package Icon -->
   <ItemGroup>
     <None Include="packageIcon.png" Pack="true" Visible="false" PackagePath="" />
@@ -52,20 +56,20 @@
     <DocumentationFile>bin\$(Configuration)\Cloud.Ocr.Activities.Design.xml</DocumentationFile>
   </PropertyGroup>
 	<ItemGroup>
-		<Reference Include="System"/>
-    <Reference Include="System.Core"/>
-		<Reference Include="System.Xml.Linq"/>
-		<Reference Include="System.Data.DataSetExtensions"/>
-		<Reference Include="Microsoft.CSharp"/>
+		<Reference Include="System" />
+    <Reference Include="System.Core" />
+		<Reference Include="System.Xml.Linq" />
+		<Reference Include="System.Data.DataSetExtensions" />
+		<Reference Include="Microsoft.CSharp" />
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
-		<Reference Include="System.Data"/>
-		<Reference Include="System.Xml"/>
-    <Reference Include="System.Activities"/>
-    <Reference Include="System.Activities.Presentation"/>
-    <Reference Include="System.Xaml"/>
-    <Reference Include="WindowsBase"/>
-    <Reference Include="System.Activities.Core.Presentation"/>
+		<Reference Include="System.Data" />
+		<Reference Include="System.Xml" />
+    <Reference Include="System.Activities" />
+    <Reference Include="System.Activities.Presentation" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="System.Activities.Core.Presentation" />
   </ItemGroup>
   <ItemGroup>
     <Page Include="..\..\Shared\Themes\Generic.xaml">
@@ -74,6 +78,12 @@
       <SubType>Designer</SubType>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Page>
+    <Page Include="Designers\BankCardActivityDesigner.xaml">
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="Designers\OcrScopeDesigner.xaml">
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
     <Page Include="Themes\Icons.xaml">
       <Generator>XamlIntelliSenseFileGenerator</Generator>
       <SubType>Designer</SubType>
@@ -81,11 +91,8 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Cloud.Ocr.Activities\Cloud.Ocr.Activities.csproj" PrivateAssets="All"/>
-    <ProjectReference Include="..\Cloud.Ocr\Cloud.Ocr.csproj" PrivateAssets="All"/>
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Designers\" />
+    <ProjectReference Include="..\Cloud.Ocr.Activities\Cloud.Ocr.Activities.csproj" PrivateAssets="All" />
+    <ProjectReference Include="..\Cloud.Ocr\Cloud.Ocr.csproj" PrivateAssets="All" />
   </ItemGroup>
   <ItemGroup>
     <Compile Update="Properties\Resources.Designer.cs">

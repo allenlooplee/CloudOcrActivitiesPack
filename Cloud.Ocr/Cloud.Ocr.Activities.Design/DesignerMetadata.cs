@@ -1,8 +1,8 @@
-﻿using System.Activities.Presentation.Metadata;
-using System.ComponentModel;
-using System.ComponentModel.Design;
 using Cloud.Ocr.Activities.Design.Designers;
 using Cloud.Ocr.Activities.Design.Properties;
+using System.Activities.Presentation.Metadata;
+using System.ComponentModel;
+using System.ComponentModel.Design;
 
 namespace Cloud.Ocr.Activities.Design
 {
@@ -19,6 +19,14 @@ namespace Cloud.Ocr.Activities.Design
 
             #endregion Setup
 
+
+            builder.AddCustomAttributes(typeof(OcrScope), categoryAttribute);
+            builder.AddCustomAttributes(typeof(OcrScope), new DesignerAttribute(typeof(OcrScopeDesigner)));
+            builder.AddCustomAttributes(typeof(OcrScope), new HelpKeywordAttribute(""));
+
+            builder.AddCustomAttributes(typeof(BankCardActivity), categoryAttribute);
+            builder.AddCustomAttributes(typeof(BankCardActivity), new DesignerAttribute(typeof(BankCardActivityDesigner)));
+            builder.AddCustomAttributes(typeof(BankCardActivity), new HelpKeywordAttribute(""));
 
 
             MetadataStore.AddAttributeTable(builder.CreateTable());

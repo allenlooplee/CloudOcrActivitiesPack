@@ -348,3 +348,6 @@ MigrationBackup/
 
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
+/tests/CloudOcrBasicTests/.local
+/tests/CloudOcrBasicTests/.screenshots
+/tests/CloudOcrBasicTests/Tests_Examples_Templates/UnitTest_Examples
