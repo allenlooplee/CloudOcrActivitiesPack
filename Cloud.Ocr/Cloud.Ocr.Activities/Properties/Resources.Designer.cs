@@ -79,7 +79,7 @@ namespace Cloud.Ocr.Activities.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to BankCardActivity.
+        ///   Looks up a localized string similar to Bank Card.
         /// </summary>
         public static string BankCardActivity_DisplayName {
             get {
