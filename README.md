@@ -1,1 +1,1 @@
-# Cloud OCR Activities Pack
+# 云可扩展OCR活动包
