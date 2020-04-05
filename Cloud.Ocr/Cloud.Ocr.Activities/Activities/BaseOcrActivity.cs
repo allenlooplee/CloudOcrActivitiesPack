@@ -73,7 +73,8 @@ namespace Cloud.Ocr.Activities
             var result = await ocrClient.RecognizeAsync(recognizerName, imagepath);
 
             // Outputs
-            return (ctx) => {
+            return (ctx) =>
+            {
                 Result.Set(ctx, result);
             };
         }

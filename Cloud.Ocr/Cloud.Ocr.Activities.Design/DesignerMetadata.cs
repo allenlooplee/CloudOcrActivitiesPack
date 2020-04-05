@@ -28,6 +28,10 @@ namespace Cloud.Ocr.Activities.Design
             builder.AddCustomAttributes(typeof(BankCardActivity), new DesignerAttribute(typeof(BankCardActivityDesigner)));
             builder.AddCustomAttributes(typeof(BankCardActivity), new HelpKeywordAttribute(""));
 
+            builder.AddCustomAttributes(typeof(MockOcrClientActivity), categoryAttribute);
+            builder.AddCustomAttributes(typeof(MockOcrClientActivity), new DesignerAttribute(typeof(MockOcrClientActivityDesigner)));
+            builder.AddCustomAttributes(typeof(MockOcrClientActivity), new HelpKeywordAttribute(""));
+
 
             MetadataStore.AddAttributeTable(builder.CreateTable());
         }

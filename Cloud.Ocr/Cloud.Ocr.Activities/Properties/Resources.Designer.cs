@@ -169,6 +169,24 @@ namespace Cloud.Ocr.Activities.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Injects MockOcrClient as IOcrClient in ObjectContainer..
+        /// </summary>
+        public static string MockOcrClientActivity_Description {
+            get {
+                return ResourceManager.GetString("MockOcrClientActivity_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Mock OCR.
+        /// </summary>
+        public static string MockOcrClientActivity_DisplayName {
+            get {
+                return ResourceManager.GetString("MockOcrClientActivity_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Contains and authenticates all Ccint OCR activities..
         /// </summary>
         public static string OcrScope_Description {
