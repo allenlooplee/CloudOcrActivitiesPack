@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="UnitTests" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="538,1924" sap2010:WorkflowViewState.IdRef="ParsingTest_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:coa="clr-namespace:Cloud.Ocr.Activities;assembly=Cloud.Ocr.Activities" xmlns:cv="clr-namespace:CustomActivities.VariableComparer;assembly=CustomActivities.VariableComparer" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:njl="clr-namespace:Newtonsoft.Json.Linq;assembly=Newtonsoft.Json" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:usa="clr-namespace:UiPath.Shared.Activities;assembly=Cloud.Ocr.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="UnitTests" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="538,2022" sap2010:WorkflowViewState.IdRef="ParsingTest_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:coa="clr-namespace:Cloud.Ocr.Activities;assembly=Cloud.Ocr.Activities" xmlns:cv="clr-namespace:CustomActivities.VariableComparer;assembly=CustomActivities.VariableComparer" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:njl="clr-namespace:Newtonsoft.Json.Linq;assembly=Newtonsoft.Json" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:usa="clr-namespace:UiPath.Shared.Activities;assembly=Cloud.Ocr.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="25">
       <x:String>System.Activities</x:String>
@@ -53,7 +53,7 @@
       <AssemblyReference>UiPath.Mail</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="Unit testing comprises of three stages: &#xA;&#xA;       - Arrange&#xA;       - Act&#xA;       - Assert. &#xA;&#xA;Basic idea of Unit Testing is to arrange a set of data that will be used to test the code. Using that data, tested code is run and the result is assigned to the &quot;actual&quot; variable. Result of the test run is then asserted to see if test have passed or not (usually this is done by comparing &quot;actual&quot; value with the &quot;expected&quot;).&#xA;&#xA;Tests can be constructed to test &quot;happy&quot; paths, fail paths and/or to check if the correct exceptions are thrown by the code.&#xA;&#xA;It is recommended to make more than one test for each peace of the code. This is to make sure that the code correctly handles both good and bad data, and also to see if correct exceptions are thrown by the code.&#xA;&#xA;IMPORTANT: For Unit Test to be eligible for use in TestingFramework it must implement Assert Unit Test activity that can be found in CustomActivities.VariableComparer namespace." DisplayName="Unit Test" sap:VirtualizedContainerService.HintSize="518,1824" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="Unit testing comprises of three stages: &#xA;&#xA;       - Arrange&#xA;       - Act&#xA;       - Assert. &#xA;&#xA;Basic idea of Unit Testing is to arrange a set of data that will be used to test the code. Using that data, tested code is run and the result is assigned to the &quot;actual&quot; variable. Result of the test run is then asserted to see if test have passed or not (usually this is done by comparing &quot;actual&quot; value with the &quot;expected&quot;).&#xA;&#xA;Tests can be constructed to test &quot;happy&quot; paths, fail paths and/or to check if the correct exceptions are thrown by the code.&#xA;&#xA;It is recommended to make more than one test for each peace of the code. This is to make sure that the code correctly handles both good and bad data, and also to see if correct exceptions are thrown by the code.&#xA;&#xA;IMPORTANT: For Unit Test to be eligible for use in TestingFramework it must implement Assert Unit Test activity that can be found in CustomActivities.VariableComparer namespace." DisplayName="Unit Test" sap:VirtualizedContainerService.HintSize="518,1922" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="expected" />
       <Variable x:TypeArguments="x:String" Name="actual" />
@@ -83,7 +83,7 @@
         </Assign.Value>
       </Assign>
     </Sequence>
-    <Sequence sap2010:Annotation.AnnotationText="Purpose of act stage is to run the code that is being tested (by invoking the code and supplying required arguments). &#xA;&#xA;Output of this stage should be actual result that code produces assigned to the &quot;actual&quot; variable." DisplayName="Act" sap:VirtualizedContainerService.HintSize="476,484" sap2010:WorkflowViewState.IdRef="Sequence_5">
+    <Sequence sap2010:Annotation.AnnotationText="Purpose of act stage is to run the code that is being tested (by invoking the code and supplying required arguments). &#xA;&#xA;Output of this stage should be actual result that code produces assigned to the &quot;actual&quot; variable." DisplayName="Act" sap:VirtualizedContainerService.HintSize="476,582" sap2010:WorkflowViewState.IdRef="Sequence_5">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -91,7 +91,7 @@
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <coa:OcrScope ContinueOnError="{x:Null}" DisplayName="OCR Scope" sap:VirtualizedContainerService.HintSize="434,300" sap2010:WorkflowViewState.IdRef="OcrScope_1">
+      <coa:OcrScope ContinueOnError="{x:Null}" DisplayName="OCR Scope" sap:VirtualizedContainerService.HintSize="434,398" sap2010:WorkflowViewState.IdRef="OcrScope_1">
         <coa:OcrScope.Body>
           <ActivityAction x:TypeArguments="usa:IObjectContainer">
             <ActivityAction.Argument>
@@ -119,6 +119,14 @@
             </Sequence>
           </ActivityAction>
         </coa:OcrScope.Body>
+        <coa:OcrScope.OcrClient>
+          <ActivityAction x:TypeArguments="usa:IObjectContainer">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="usa:IObjectContainer" Name="OcrScope" />
+            </ActivityAction.Argument>
+            <coa:MockOcrClientActivity ContinueOnError="{x:Null}" DisplayName="Mock OCR" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="MockOcrClientActivity_1" />
+          </ActivityAction>
+        </coa:OcrScope.OcrClient>
       </coa:OcrScope>
     </Sequence>
     <Sequence sap2010:Annotation.AnnotationText="Purpose of the assert stage is to determine if test have passed or not. &#xA;&#xA;Here we use custom activity called Assert Unit Tests (make sure that you have installed package Custom.Activities.VariableComparer)&#xA;&#xA;NOTE: Recommended way to use Assert Unit Test activity is to use Assert methods like Assert.IsNotNull(actual) or Assert.AreEqual(expected,actual).&#xA;&#xA;NOTE (Not recommended): It is also possible to enter any boolean expression. In this case if entered expression returns as false only generic message will be logged in TestingFramework logs. This can be useful if some custom comparison is needed that is not available as a method of Assert class." DisplayName="Assert" sap:VirtualizedContainerService.HintSize="476,544" sap2010:WorkflowViewState.IdRef="Sequence_6">

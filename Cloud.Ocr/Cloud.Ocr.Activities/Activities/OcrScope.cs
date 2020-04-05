@@ -19,6 +19,9 @@ namespace Cloud.Ocr.Activities
         #region Properties
 
         [Browsable(false)]
+        public ActivityAction<IObjectContainer> OcrClient { get; set; }
+
+        [Browsable(false)]
         public ActivityAction<IObjectContainer​> Body { get; set; }
 
         /// <summary>
@@ -44,6 +47,11 @@ namespace Cloud.Ocr.Activities
         {
             _objectContainer = objectContainer;
 
+            OcrClient = new ActivityAction<IObjectContainer>
+            {
+                Argument = new DelegateInArgument<IObjectContainer>(ParentContainerPropertyTag)
+            };
+
             Body = new ActivityAction<IObjectContainer>
             {
                 Argument = new DelegateInArgument<IObjectContainer> (ParentContainerPropertyTag),
@@ -67,18 +75,20 @@ namespace Cloud.Ocr.Activities
             base.CacheMetadata(metadata);
         }
 
-        protected override async Task<Action<NativeActivityContext>> ExecuteAsync(NativeActivityContext  context, CancellationToken cancellationToken)
+        protected override async Task<Action<NativeActivityContext>> ExecuteAsync(NativeActivityContext context, CancellationToken cancellationToken)
         {
-            // Inputs
-            IOcrClient ocrClient = new MockOcrClient();
-            _objectContainer.Add(ocrClient);
+            // Schedule the client to inject an IOcrClient object.
+            if (OcrClient != null && OcrClient.Handler != null)
+            {
+                context.ScheduleAction<IObjectContainer>(OcrClient, _objectContainer, OnCompleted, OnFaulted);
+            }
 
             return (ctx) => {
                 // Schedule child activities
                 if (Body != null)
-				    ctx.ScheduleAction<IObjectContainer>(Body, _objectContainer, OnCompleted, OnFaulted);
-
-                // Outputs
+                {
+                    ctx.ScheduleAction<IObjectContainer>(Body, _objectContainer, OnCompleted, OnFaulted);
+                }
             };
         }
 

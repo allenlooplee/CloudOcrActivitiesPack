@@ -5,11 +5,11 @@ VisualStudioVersion = 16.0.29709.97
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Cloud.Ocr", "Cloud.Ocr", "{8EC095EE-24A4-41F0-B5B7-70304CB2C3AF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cloud.Ocr", "Cloud.Ocr\Cloud.Ocr\Cloud.Ocr.csproj", "{5061E32C-F0B2-43AE-B2A0-15F9ADF0EC47}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cloud.Ocr", "Cloud.Ocr\Cloud.Ocr\Cloud.Ocr.csproj", "{5061E32C-F0B2-43AE-B2A0-15F9ADF0EC47}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cloud.Ocr.Activities", "Cloud.Ocr\Cloud.Ocr.Activities\Cloud.Ocr.Activities.csproj", "{35D41BC9-59FD-4D69-8979-2FD5465157A5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cloud.Ocr.Activities", "Cloud.Ocr\Cloud.Ocr.Activities\Cloud.Ocr.Activities.csproj", "{35D41BC9-59FD-4D69-8979-2FD5465157A5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cloud.Ocr.Activities.Design", "Cloud.Ocr\Cloud.Ocr.Activities.Design\Cloud.Ocr.Activities.Design.csproj", "{13DA67E9-DF14-4B9B-B30A-ACA0CE7FE194}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cloud.Ocr.Activities.Design", "Cloud.Ocr\Cloud.Ocr.Activities.Design\Cloud.Ocr.Activities.Design.csproj", "{13DA67E9-DF14-4B9B-B30A-ACA0CE7FE194}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{D55435B8-3272-42B6-B52B-F0DCCBA06C3D}"
 EndProject
@@ -19,6 +19,8 @@ Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "UiPath.Shared.Activities.De
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		Shared\UiPath.Shared.Activities.Design\UiPath.Shared.Activities.Design.projitems*{13da67e9-df14-4b9b-b30a-aca0ce7fe194}*SharedItemsImports = 5
+		Shared\UiPath.Shared.Activities\UiPath.Shared.Activities.projitems*{35d41bc9-59fd-4d69-8979-2fd5465157a5}*SharedItemsImports = 5
 		Shared\UiPath.Shared.Activities\UiPath.Shared.Activities.projitems*{4546856d-ea50-45c6-9419-eeeacb5a80aa}*SharedItemsImports = 13
 		Shared\UiPath.Shared.Activities.Design\UiPath.Shared.Activities.Design.projitems*{df9c43f0-add3-4fbf-995e-84b92f9cbf25}*SharedItemsImports = 13
 	EndGlobalSection

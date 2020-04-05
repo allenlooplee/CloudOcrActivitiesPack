@@ -1,4 +1,5 @@
-﻿using Cloud.Ocr.Activities.Properties;
+﻿using Cloud.Ocr.Activities;
+using Cloud.Ocr.Activities.Properties;
 using Cloud.Ocr.Contracts;
 using Cloud.Ocr.Models;
 using Newtonsoft.Json.Linq;
@@ -13,7 +14,7 @@ using UiPath.Shared.Activities;
 using UiPath.Shared.Activities.Localization;
 using UiPath.Shared.Activities.Utilities;
 
-namespace Cloud.Ocr.Activities
+namespace Cloud.Ocr.Contracts
 {
     public abstract class BaseOcrActivity : ContinuableAsyncCodeActivity
     {
@@ -73,7 +74,8 @@ namespace Cloud.Ocr.Activities
             var result = await ocrClient.RecognizeAsync(recognizerName, imagepath);
 
             // Outputs
-            return (ctx) => {
+            return (ctx) =>
+            {
                 Result.Set(ctx, result);
             };
         }

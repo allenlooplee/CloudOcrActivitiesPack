@@ -205,4 +205,12 @@
     <value>Returns the recognized values of a bank card.</value>
     <comment>activity description</comment>
   </data>
+  <data name="MockOcrClientActivity_DisplayName" xml:space="preserve">
+    <value>Mock OCR</value>
+    <comment>activity name</comment>
+  </data>
+  <data name="MockOcrClientActivity_Description" xml:space="preserve">
+    <value>Injects MockOcrClient as IOcrClient in ObjectContainer.</value>
+    <comment>activity description</comment>
+  </data>
 </root>
