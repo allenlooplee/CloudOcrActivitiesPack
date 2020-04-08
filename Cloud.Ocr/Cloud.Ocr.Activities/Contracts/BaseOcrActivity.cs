@@ -1,13 +1,8 @@
 ﻿using Cloud.Ocr.Activities;
 using Cloud.Ocr.Activities.Properties;
-using Cloud.Ocr.Contracts;
-using Cloud.Ocr.Models;
 using Newtonsoft.Json.Linq;
 using System;
 using System.Activities;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using UiPath.Shared.Activities;
