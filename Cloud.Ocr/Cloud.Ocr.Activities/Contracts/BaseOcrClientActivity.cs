@@ -42,12 +42,12 @@ namespace Cloud.Ocr.Contracts
             base.CacheMetadata(metadata);
         }
 
-        protected abstract IOcrClient GetOcrClient();
+        protected abstract IOcrClient GetOcrClient(AsyncCodeActivityContext context);
 
         protected override async Task<Action<AsyncCodeActivityContext>> ExecuteAsync(AsyncCodeActivityContext context, CancellationToken cancellationToken)
         {
             // Inputs
-            IOcrClient ocrClient = GetOcrClient();
+            IOcrClient ocrClient = GetOcrClient(context);
             var objectContainer = context.GetFromContext<IObjectContainer>(OcrScope.ParentContainerPropertyTag);
             objectContainer.Add(ocrClient);
 
