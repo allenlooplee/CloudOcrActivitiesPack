@@ -15,7 +15,7 @@ namespace Cloud.Ocr.Activities
     [LocalizedDescription(nameof(Resources.MockOcrClientActivity_Description))]
     public class MockOcrClientActivity : BaseOcrClientActivity
     {
-        protected override IOcrClient GetOcrClient()
+        protected override IOcrClient GetOcrClient(AsyncCodeActivityContext context)
         {
             return new MockOcrClient();
         }

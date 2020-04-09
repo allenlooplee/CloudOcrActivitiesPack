@@ -3,7 +3,7 @@
   "description": "Basic tests for Cloud OCR Activities Pack",
   "main": "RunAllTests.xaml",
   "dependencies": {
-    "Cloud.Ocr.Activities": "[0.1.0.405120831]",
+    "Cloud.Ocr.Activities": "[0.1.0.408133921]",
     "Custom.Activities.VariableComparer": "[2.1.6]",
     "TestingFrameworkUi": "[1.3.3]",
     "UiPath.Excel.Activities": "[2.5.2]",
