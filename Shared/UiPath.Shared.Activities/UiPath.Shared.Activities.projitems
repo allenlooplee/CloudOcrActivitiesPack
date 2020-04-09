@@ -26,6 +26,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Utilities\ActivityExtensions.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Utilities\EnumNameConverter.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Utilities\HashFunctions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Utilities\ResourceExtensions.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="$(MSBuildThisFileDirectory)Attributes\" />
