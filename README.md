@@ -22,7 +22,7 @@
 10|护照识别|卡证|PassportActivity
 11|港澳通行证识别|卡证|HkMacauExitentrypermitActivity
 12|台湾通行证识别|卡证|TaiwanExitentrypermitActivity
-13|行驶证识别|汽车场景|VehicleLicenseActivity
-14|驾驶证识别|汽车场景|DriverLicenseActivity
+13|驾驶证识别|汽车场景|DriverLicenseActivity
+14|行驶证识别|汽车场景|VehicleLicenseActivity
 15|机动车销售发票识别|汽车场景|VehicleInvoiceActivity
 16|车辆合格证识别|汽车场景|VehicleCertificateActivity|
