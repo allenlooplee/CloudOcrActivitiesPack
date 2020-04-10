@@ -351,3 +351,4 @@ MigrationBackup/
 /tests/CloudOcrBasicTests/.local
 /tests/CloudOcrBasicTests/.screenshots
 /tests/CloudOcrBasicTests/Tests_Examples_Templates/UnitTest_Examples
+/templates/CloudOcrBasicProcess/.local
