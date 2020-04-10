@@ -237,4 +237,100 @@
     <value>VAT Invoice</value>
     <comment>activity name</comment>
   </data>
+  <data name="TaxiReceiptActivity_DisplayName" xml:space="preserve">
+    <value>Taxi Receipt</value>
+    <comment>activity name</comment>
+  </data>
+  <data name="TaxiReceiptActivity_Description" xml:space="preserve">
+    <value>Returns the recognized values of a taxi receipt.</value>
+    <comment>activity description</comment>
+  </data>
+  <data name="TrainTicketActivity_DisplayName" xml:space="preserve">
+    <value>Train Ticket</value>
+    <comment>activity name</comment>
+  </data>
+  <data name="TrainTicketActivity_Description" xml:space="preserve">
+    <value>Returns the recognized values of a train ticket.</value>
+    <comment>activity description</comment>
+  </data>
+  <data name="QuotaInvoiceActivity_DisplayName" xml:space="preserve">
+    <value>Quota Invoice</value>
+    <comment>activity name</comment>
+  </data>
+  <data name="QuotaInvoiceActivity_Description" xml:space="preserve">
+    <value>Returns the recognized values of a quota invoice.</value>
+    <comment>activity description</comment>
+  </data>
+  <data name="HouseholdRegisterActivity_DisplayName" xml:space="preserve">
+    <value>Household Register</value>
+    <comment>activity name</comment>
+  </data>
+  <data name="HouseholdRegisterActivity_Description" xml:space="preserve">
+    <value>Returns the recognized values of a household register.</value>
+    <comment>activity description</comment>
+  </data>
+  <data name="BirthCertificateActivity_DisplayName" xml:space="preserve">
+    <value>Birth Certificate</value>
+    <comment>activity name</comment>
+  </data>
+  <data name="BirthCertificateActivity_Description" xml:space="preserve">
+    <value>Returns the recognized values of a birth certificate.</value>
+    <comment>activity description</comment>
+  </data>
+  <data name="PassportActivity_DisplayName" xml:space="preserve">
+    <value>Passport</value>
+    <comment>activity name</comment>
+  </data>
+  <data name="PassportActivity_Description" xml:space="preserve">
+    <value>Returns the recognized values of a passport.</value>
+    <comment>activity description</comment>
+  </data>
+  <data name="HkMacauExitentrypermitActivity_DisplayName" xml:space="preserve">
+    <value>HK and Macau Pass</value>
+    <comment>activity name</comment>
+  </data>
+  <data name="HkMacauExitentrypermitActivity_Description" xml:space="preserve">
+    <value>Returns the recognized values of a HK and Macau pass.</value>
+    <comment>activity description</comment>
+  </data>
+  <data name="TaiwanExitentrypermitActivity_DisplayName" xml:space="preserve">
+    <value>Taiwan Pass</value>
+    <comment>activity name</comment>
+  </data>
+  <data name="TaiwanExitentrypermitActivity_Description" xml:space="preserve">
+    <value>Returns the recognized values of a Taiwan pass.</value>
+    <comment>activity description</comment>
+  </data>
+  <data name="DriverLicenseActivity_DisplayName" xml:space="preserve">
+    <value>Driver License</value>
+    <comment>activity name</comment>
+  </data>
+  <data name="DriverLicenseActivity_Description" xml:space="preserve">
+    <value>Returns the recognized values of a driver license.</value>
+    <comment>activity description</comment>
+  </data>
+  <data name="VehicleLicenseActivity_DisplayName" xml:space="preserve">
+    <value>Vehicle License</value>
+    <comment>activity name</comment>
+  </data>
+  <data name="VehicleLicenseActivity_Description" xml:space="preserve">
+    <value>Returns the recognized values of a vehicle license.</value>
+    <comment>activity description</comment>
+  </data>
+  <data name="VehicleInvoiceActivity_DisplayName" xml:space="preserve">
+    <value>Vehicle Invoice</value>
+    <comment>activity name</comment>
+  </data>
+  <data name="VehicleInvoiceActivity_Description" xml:space="preserve">
+    <value>Returns the recognized values of a vehicle invoice.</value>
+    <comment>activity description</comment>
+  </data>
+  <data name="VehicleCertificateActivity_DisplayName" xml:space="preserve">
+    <value>Vehicle Certificate</value>
+    <comment>activity name</comment>
+  </data>
+  <data name="VehicleCertificateActivity_Description" xml:space="preserve">
+    <value>Returns the recognized values of a vehicle certificate.</value>
+    <comment>activity description</comment>
+  </data>
 </root>

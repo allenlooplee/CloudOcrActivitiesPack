@@ -124,6 +124,24 @@ namespace Cloud.Ocr.Activities.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Returns the recognized values of a birth certificate..
+        /// </summary>
+        public static string BirthCertificateActivity_Description {
+            get {
+                return ResourceManager.GetString("BirthCertificateActivity_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Birth Certificate.
+        /// </summary>
+        public static string BirthCertificateActivity_DisplayName {
+            get {
+                return ResourceManager.GetString("BirthCertificateActivity_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Returns the recognized values of a business license..
         /// </summary>
         public static string BusinessLicenseActivity_Description {
@@ -174,6 +192,60 @@ namespace Cloud.Ocr.Activities.Properties {
         public static string Do {
             get {
                 return ResourceManager.GetString("Do", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Returns the recognized values of a driver license..
+        /// </summary>
+        public static string DriverLicenseActivity_Description {
+            get {
+                return ResourceManager.GetString("DriverLicenseActivity_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Driver License.
+        /// </summary>
+        public static string DriverLicenseActivity_DisplayName {
+            get {
+                return ResourceManager.GetString("DriverLicenseActivity_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Returns the recognized values of a HK and Macau pass..
+        /// </summary>
+        public static string HkMacauExitentrypermitActivity_Description {
+            get {
+                return ResourceManager.GetString("HkMacauExitentrypermitActivity_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to HK and Macau Pass.
+        /// </summary>
+        public static string HkMacauExitentrypermitActivity_DisplayName {
+            get {
+                return ResourceManager.GetString("HkMacauExitentrypermitActivity_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Returns the recognized values of a household register..
+        /// </summary>
+        public static string HouseholdRegisterActivity_Description {
+            get {
+                return ResourceManager.GetString("HouseholdRegisterActivity_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Household Register.
+        /// </summary>
+        public static string HouseholdRegisterActivity_DisplayName {
+            get {
+                return ResourceManager.GetString("HouseholdRegisterActivity_DisplayName", resourceCulture);
             }
         }
         
@@ -259,6 +331,78 @@ namespace Cloud.Ocr.Activities.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Returns the recognized values of a passport..
+        /// </summary>
+        public static string PassportActivity_Description {
+            get {
+                return ResourceManager.GetString("PassportActivity_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Passport.
+        /// </summary>
+        public static string PassportActivity_DisplayName {
+            get {
+                return ResourceManager.GetString("PassportActivity_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Returns the recognized values of a quota invoice..
+        /// </summary>
+        public static string QuotaInvoiceActivity_Description {
+            get {
+                return ResourceManager.GetString("QuotaInvoiceActivity_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Quota Invoice.
+        /// </summary>
+        public static string QuotaInvoiceActivity_DisplayName {
+            get {
+                return ResourceManager.GetString("QuotaInvoiceActivity_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Returns the recognized values of a Taiwan pass..
+        /// </summary>
+        public static string TaiwanExitentrypermitActivity_Description {
+            get {
+                return ResourceManager.GetString("TaiwanExitentrypermitActivity_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Taiwan Pass.
+        /// </summary>
+        public static string TaiwanExitentrypermitActivity_DisplayName {
+            get {
+                return ResourceManager.GetString("TaiwanExitentrypermitActivity_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Returns the recognized values of a taxi receipt..
+        /// </summary>
+        public static string TaxiReceiptActivity_Description {
+            get {
+                return ResourceManager.GetString("TaxiReceiptActivity_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Taxi Receipt.
+        /// </summary>
+        public static string TaxiReceiptActivity_DisplayName {
+            get {
+                return ResourceManager.GetString("TaxiReceiptActivity_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Specifies the amount of time (in milliseconds) to wait for the activity to run before an error is thrown. The default value is 60000 (1 minute)..
         /// </summary>
         public static string Timeout_Description {
@@ -282,6 +426,24 @@ namespace Cloud.Ocr.Activities.Properties {
         public static string Timeout_Error {
             get {
                 return ResourceManager.GetString("Timeout_Error", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Returns the recognized values of a train ticket..
+        /// </summary>
+        public static string TrainTicketActivity_Description {
+            get {
+                return ResourceManager.GetString("TrainTicketActivity_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Train Ticket.
+        /// </summary>
+        public static string TrainTicketActivity_DisplayName {
+            get {
+                return ResourceManager.GetString("TrainTicketActivity_DisplayName", resourceCulture);
             }
         }
         
@@ -336,6 +498,60 @@ namespace Cloud.Ocr.Activities.Properties {
         public static string VatInvoiceActivity_DisplayName {
             get {
                 return ResourceManager.GetString("VatInvoiceActivity_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Returns the recognized values of a vehicle certificate..
+        /// </summary>
+        public static string VehicleCertificateActivity_Description {
+            get {
+                return ResourceManager.GetString("VehicleCertificateActivity_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Vehicle Certificate.
+        /// </summary>
+        public static string VehicleCertificateActivity_DisplayName {
+            get {
+                return ResourceManager.GetString("VehicleCertificateActivity_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Returns the recognized values of a vehicle invoice..
+        /// </summary>
+        public static string VehicleInvoiceActivity_Description {
+            get {
+                return ResourceManager.GetString("VehicleInvoiceActivity_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Vehicle Invoice.
+        /// </summary>
+        public static string VehicleInvoiceActivity_DisplayName {
+            get {
+                return ResourceManager.GetString("VehicleInvoiceActivity_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Returns the recognized values of a vehicle license..
+        /// </summary>
+        public static string VehicleLicenseActivity_Description {
+            get {
+                return ResourceManager.GetString("VehicleLicenseActivity_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Vehicle License.
+        /// </summary>
+        public static string VehicleLicenseActivity_DisplayName {
+            get {
+                return ResourceManager.GetString("VehicleLicenseActivity_DisplayName", resourceCulture);
             }
         }
     }
