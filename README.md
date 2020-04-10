@@ -4,7 +4,7 @@
 
 云可扩展OCR活动包采用全新的架构，为扩展而生，最大限度重用代码，让使用云OCR的活动包可以轻松创建出来。云可扩展OCR活动包可以看作[百度OCR活动包](https://github.com/allenlooplee/BaiduOcrActivitiesPack)和[合合OCR活动包](https://github.com/allenlooplee/CcintOcrActivitiesPack)的一个自然演变结果，它让多套OCR活动包共享一套OCR活动（如BankCardActivity）成为可能，为未来加入其他OCR服务打下基础，同时让现有流程更换OCR服务变得容易。
 
-## OCR活动
+## OCR活动清单
 
 本活动包支持以下16个文字识别活动，用于常见的票据、卡证和汽车场景：
 
@@ -26,3 +26,17 @@
 14|行驶证识别|汽车场景|[VehicleLicenseActivity](https://github.com/allenlooplee/CloudOcrActivitiesPack/blob/master/Cloud.Ocr/Cloud.Ocr.Activities/Activities/VehicleLicenseActivity.cs)
 15|机动车销售发票识别|汽车场景|[VehicleInvoiceActivity](https://github.com/allenlooplee/CloudOcrActivitiesPack/blob/master/Cloud.Ocr/Cloud.Ocr.Activities/Activities/VehicleInvoiceActivity.cs)
 16|车辆合格证识别|汽车场景|[VehicleCertificateActivity](https://github.com/allenlooplee/CloudOcrActivitiesPack/blob/master/Cloud.Ocr/Cloud.Ocr.Activities/Activities/VehicleCertificateActivity.cs)
+
+## 其他代码库和参考资料
+* [JSON.NET](https://github.com/JamesNK/Newtonsoft.Json)
+* [How to Create Activities](https://docs.uipath.com/integrations/docs/how-to-create-activities)
+* [Testing Framework for UiPath](https://connect.uipath.com/marketplace/components/uipath-testing-framework)
+* [Windows Workflow Foundation](https://docs.microsoft.com/en-us/dotnet/framework/windows-workflow-foundation/)
+
+## 许可协议
+
+本代码库遵循[MIT许可协议](https://github.com/allenlooplee/CloudOcrActivitiesPack/blob/master/LICENSE)，可作商业用途。
+
+## 特别声明
+* 本活动包并不包含任何本地模型，你的票据将会发往云OCR服务商进行识别。
+* 本活动包并不收取任何费用，但云OCR服务商可能根据你的使用情况收取相关费用。
