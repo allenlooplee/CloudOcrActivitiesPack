@@ -2,9 +2,7 @@
 
 ![海报](https://github.com/allenlooplee/CloudOcrActivitiesPack/blob/master/docs/images/poster.png)
 
-云可扩展OCR活动包采用全新的架构，为扩展而生，最大限度重用代码，让使用云OCR的活动包可以轻松创建出来。云可扩展OCR活动包可以看作[百度OCR活动包](https://github.com/allenlooplee/BaiduOcrActivitiesPack)和[合合OCR活动包](https://github.com/allenlooplee/CcintOcrActivitiesPack)的一个自然演变结果，它的出现主要为了实现两个目标：
-1. 一套可在多个OCR活动包中共享的具体OCR活动（如BankCardActivity），而不是每个OCR活动包都重新实现一遍这些具体OCR活动。
-2. 可以通过简单的拖放直接更换OCR服务，而不是更换每个用到的具体OCR活动，同时为未来加入其他OCR服务打下基础。
+云可扩展OCR活动包采用全新的架构，为扩展而生，最大限度重用代码，让使用云OCR的活动包可以轻松创建出来。云可扩展OCR活动包可以看作[百度OCR活动包](https://github.com/allenlooplee/BaiduOcrActivitiesPack)和[合合OCR活动包](https://github.com/allenlooplee/CcintOcrActivitiesPack)的一个自然演变结果，它让多套OCR活动包共享一套OCR活动（如BankCardActivity）成为可能，为未来加入其他OCR服务打下基础，同时让现有流程更换OCR服务变得容易。
 
 ## OCR活动
 
