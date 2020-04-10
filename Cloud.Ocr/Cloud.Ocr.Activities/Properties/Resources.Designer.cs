@@ -160,6 +160,24 @@ namespace Cloud.Ocr.Activities.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Returns the recognized values of a ID card..
+        /// </summary>
+        public static string IdCardActivity_Description {
+            get {
+                return ResourceManager.GetString("IdCardActivity_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ID Card.
+        /// </summary>
+        public static string IdCardActivity_DisplayName {
+            get {
+                return ResourceManager.GetString("IdCardActivity_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Input.
         /// </summary>
         public static string Input_Category {

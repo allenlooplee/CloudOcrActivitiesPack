@@ -31,6 +31,7 @@
   </PropertyGroup>
   <ItemGroup>
     <None Remove="Designers\BankCardActivityDesigner.xaml" />
+    <None Remove="Designers\IdCardActivityDesigner.xaml" />
     <None Remove="Designers\MockOcrClientActivityDesigner.xaml" />
     <None Remove="Designers\OcrScopeDesigner.xaml" />
   </ItemGroup>
@@ -80,6 +81,9 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Page>
     <Page Include="Designers\BankCardActivityDesigner.xaml">
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="Designers\IdCardActivityDesigner.xaml">
       <Generator>XamlIntelliSenseFileGenerator</Generator>
     </Page>
     <Page Include="Designers\MockOcrClientActivityDesigner.xaml">

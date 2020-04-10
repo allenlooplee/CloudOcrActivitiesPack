@@ -32,6 +32,9 @@ namespace Cloud.Ocr.Activities.Design
             builder.AddCustomAttributes(typeof(MockOcrClientActivity), new DesignerAttribute(typeof(MockOcrClientActivityDesigner)));
             builder.AddCustomAttributes(typeof(MockOcrClientActivity), new HelpKeywordAttribute(""));
 
+            builder.AddCustomAttributes(typeof(IdCardActivity), categoryAttribute);
+            builder.AddCustomAttributes(typeof(IdCardActivity), new DesignerAttribute(typeof(IdCardActivityDesigner)));
+            builder.AddCustomAttributes(typeof(IdCardActivity), new HelpKeywordAttribute(""));
 
             MetadataStore.AddAttributeTable(builder.CreateTable());
         }

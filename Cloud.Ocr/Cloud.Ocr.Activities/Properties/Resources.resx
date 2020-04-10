@@ -213,4 +213,12 @@
     <value>Injects MockOcrClient as IOcrClient in ObjectContainer.</value>
     <comment>activity description</comment>
   </data>
+  <data name="IdCardActivity_Description" xml:space="preserve">
+    <value>Returns the recognized values of a ID card.</value>
+    <comment>activity description</comment>
+  </data>
+  <data name="IdCardActivity_DisplayName" xml:space="preserve">
+    <value>ID Card</value>
+    <comment>activity name</comment>
+  </data>
 </root>
