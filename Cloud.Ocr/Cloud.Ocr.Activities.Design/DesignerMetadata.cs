@@ -40,6 +40,10 @@ namespace Cloud.Ocr.Activities.Design
             builder.AddCustomAttributes(typeof(BusinessLicenseActivity), new DesignerAttribute(typeof(BusinessLicenseActivityDesigner)));
             builder.AddCustomAttributes(typeof(BusinessLicenseActivity), new HelpKeywordAttribute(""));
 
+            builder.AddCustomAttributes(typeof(VatInvoiceActivity), categoryAttribute);
+            builder.AddCustomAttributes(typeof(VatInvoiceActivity), new DesignerAttribute(typeof(VatInvoiceActivityDesigner)));
+            builder.AddCustomAttributes(typeof(VatInvoiceActivity), new HelpKeywordAttribute(""));
+
             MetadataStore.AddAttributeTable(builder.CreateTable());
         }
     }

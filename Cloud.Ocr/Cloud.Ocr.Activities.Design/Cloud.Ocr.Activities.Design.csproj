@@ -35,6 +35,7 @@
     <None Remove="Designers\IdCardActivityDesigner.xaml" />
     <None Remove="Designers\MockOcrClientActivityDesigner.xaml" />
     <None Remove="Designers\OcrScopeDesigner.xaml" />
+    <None Remove="Designers\VatInvoiceActivityDesigner.xaml" />
   </ItemGroup>
   <!-- Package Icon -->
   <ItemGroup>
@@ -94,6 +95,9 @@
       <Generator>XamlIntelliSenseFileGenerator</Generator>
     </Page>
     <Page Include="Designers\OcrScopeDesigner.xaml">
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="Designers\VatInvoiceActivityDesigner.xaml">
       <Generator>XamlIntelliSenseFileGenerator</Generator>
     </Page>
     <Page Include="Themes\Icons.xaml">

@@ -320,5 +320,23 @@ namespace Cloud.Ocr.Activities.Properties {
                 return ResourceManager.GetString("ValidationValue_Error", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Returns the recognized values of a VAT invoice..
+        /// </summary>
+        public static string VatInvoiceActivity_Description {
+            get {
+                return ResourceManager.GetString("VatInvoiceActivity_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to VAT Invoice.
+        /// </summary>
+        public static string VatInvoiceActivity_DisplayName {
+            get {
+                return ResourceManager.GetString("VatInvoiceActivity_DisplayName", resourceCulture);
+            }
+        }
     }
 }
