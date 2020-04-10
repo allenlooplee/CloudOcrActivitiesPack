@@ -43,6 +43,54 @@ namespace Cloud.Ocr.Activities.Design
             builder.AddCustomAttributes(typeof(VatInvoiceActivity), categoryAttribute);
             builder.AddCustomAttributes(typeof(VatInvoiceActivity), new DesignerAttribute(typeof(VatInvoiceActivityDesigner)));
             builder.AddCustomAttributes(typeof(VatInvoiceActivity), new HelpKeywordAttribute(""));
+            builder.AddCustomAttributes(typeof(TaxiReceiptActivity), categoryAttribute);
+            builder.AddCustomAttributes(typeof(TaxiReceiptActivity), new DesignerAttribute(typeof(TaxiReceiptActivityDesigner)));
+            builder.AddCustomAttributes(typeof(TaxiReceiptActivity), new HelpKeywordAttribute(""));
+
+            builder.AddCustomAttributes(typeof(TrainTicketActivity), categoryAttribute);
+            builder.AddCustomAttributes(typeof(TrainTicketActivity), new DesignerAttribute(typeof(TrainTicketActivityDesigner)));
+            builder.AddCustomAttributes(typeof(TrainTicketActivity), new HelpKeywordAttribute(""));
+
+            builder.AddCustomAttributes(typeof(QuotaInvoiceActivity), categoryAttribute);
+            builder.AddCustomAttributes(typeof(QuotaInvoiceActivity), new DesignerAttribute(typeof(QuotaInvoiceActivityDesigner)));
+            builder.AddCustomAttributes(typeof(QuotaInvoiceActivity), new HelpKeywordAttribute(""));
+
+            builder.AddCustomAttributes(typeof(HouseholdRegisterActivity), categoryAttribute);
+            builder.AddCustomAttributes(typeof(HouseholdRegisterActivity), new DesignerAttribute(typeof(HouseholdRegisterActivityDesigner)));
+            builder.AddCustomAttributes(typeof(HouseholdRegisterActivity), new HelpKeywordAttribute(""));
+
+            builder.AddCustomAttributes(typeof(BirthCertificateActivity), categoryAttribute);
+            builder.AddCustomAttributes(typeof(BirthCertificateActivity), new DesignerAttribute(typeof(BirthCertificateActivityDesigner)));
+            builder.AddCustomAttributes(typeof(BirthCertificateActivity), new HelpKeywordAttribute(""));
+
+            builder.AddCustomAttributes(typeof(PassportActivity), categoryAttribute);
+            builder.AddCustomAttributes(typeof(PassportActivity), new DesignerAttribute(typeof(PassportActivityDesigner)));
+            builder.AddCustomAttributes(typeof(PassportActivity), new HelpKeywordAttribute(""));
+
+            builder.AddCustomAttributes(typeof(HkMacauExitentrypermitActivity), categoryAttribute);
+            builder.AddCustomAttributes(typeof(HkMacauExitentrypermitActivity), new DesignerAttribute(typeof(HkMacauExitentrypermitActivityDesigner)));
+            builder.AddCustomAttributes(typeof(HkMacauExitentrypermitActivity), new HelpKeywordAttribute(""));
+
+            builder.AddCustomAttributes(typeof(TaiwanExitentrypermitActivity), categoryAttribute);
+            builder.AddCustomAttributes(typeof(TaiwanExitentrypermitActivity), new DesignerAttribute(typeof(TaiwanExitentrypermitActivityDesigner)));
+            builder.AddCustomAttributes(typeof(TaiwanExitentrypermitActivity), new HelpKeywordAttribute(""));
+
+            builder.AddCustomAttributes(typeof(DriverLicenseActivity), categoryAttribute);
+            builder.AddCustomAttributes(typeof(DriverLicenseActivity), new DesignerAttribute(typeof(DriverLicenseActivityDesigner)));
+            builder.AddCustomAttributes(typeof(DriverLicenseActivity), new HelpKeywordAttribute(""));
+
+            builder.AddCustomAttributes(typeof(VehicleLicenseActivity), categoryAttribute);
+            builder.AddCustomAttributes(typeof(VehicleLicenseActivity), new DesignerAttribute(typeof(VehicleLicenseActivityDesigner)));
+            builder.AddCustomAttributes(typeof(VehicleLicenseActivity), new HelpKeywordAttribute(""));
+
+            builder.AddCustomAttributes(typeof(VehicleInvoiceActivity), categoryAttribute);
+            builder.AddCustomAttributes(typeof(VehicleInvoiceActivity), new DesignerAttribute(typeof(VehicleInvoiceActivityDesigner)));
+            builder.AddCustomAttributes(typeof(VehicleInvoiceActivity), new HelpKeywordAttribute(""));
+
+            builder.AddCustomAttributes(typeof(VehicleCertificateActivity), categoryAttribute);
+            builder.AddCustomAttributes(typeof(VehicleCertificateActivity), new DesignerAttribute(typeof(VehicleCertificateActivityDesigner)));
+            builder.AddCustomAttributes(typeof(VehicleCertificateActivity), new HelpKeywordAttribute(""));
+
 
             MetadataStore.AddAttributeTable(builder.CreateTable());
         }

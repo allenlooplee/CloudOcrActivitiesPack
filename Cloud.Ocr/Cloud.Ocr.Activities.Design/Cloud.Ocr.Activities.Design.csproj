@@ -24,18 +24,30 @@
   </PropertyGroup>
   <!-- Package Versions -->
   <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
-    <PackageVersion>0.1.0.$([System.DateTime]::UtcNow.ToString(MMddHmmss))</PackageVersion>
+    <PackageVersion>0.2.0.$([System.DateTime]::UtcNow.ToString(MMddHmmss))</PackageVersion>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)' == 'Release'">
-    <PackageVersion>0.1.0</PackageVersion>
+    <PackageVersion>0.2.0</PackageVersion>
   </PropertyGroup>
   <ItemGroup>
     <None Remove="Designers\BankCardActivityDesigner.xaml" />
+    <None Remove="Designers\BirthCertificateActivityDesigner.xaml" />
     <None Remove="Designers\BusinessLicenseActivityDesigner.xaml" />
+    <None Remove="Designers\DriverLicenseActivityDesigner.xaml" />
+    <None Remove="Designers\HkMacauExitentrypermitActivityDesigner.xaml" />
+    <None Remove="Designers\HouseholdRegisterActivityDesigner.xaml" />
     <None Remove="Designers\IdCardActivityDesigner.xaml" />
     <None Remove="Designers\MockOcrClientActivityDesigner.xaml" />
     <None Remove="Designers\OcrScopeDesigner.xaml" />
+    <None Remove="Designers\PassportActivityDesigner.xaml" />
+    <None Remove="Designers\QuotaInvoiceActivityDesigner.xaml" />
+    <None Remove="Designers\TaiwanExitentrypermitActivityDesigner.xaml" />
+    <None Remove="Designers\TaxiReceiptActivityDesigner.xaml" />
+    <None Remove="Designers\TrainTicketActivityDesigner.xaml" />
     <None Remove="Designers\VatInvoiceActivityDesigner.xaml" />
+    <None Remove="Designers\VehicleCertificateActivityDesigner.xaml" />
+    <None Remove="Designers\VehicleInvoiceActivityDesigner.xaml" />
+    <None Remove="Designers\VehicleLicenseActivityDesigner.xaml" />
   </ItemGroup>
   <!-- Package Icon -->
   <ItemGroup>
@@ -85,7 +97,19 @@
     <Page Include="Designers\BankCardActivityDesigner.xaml">
       <Generator>XamlIntelliSenseFileGenerator</Generator>
     </Page>
+    <Page Include="Designers\BirthCertificateActivityDesigner.xaml">
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
     <Page Include="Designers\BusinessLicenseActivityDesigner.xaml">
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="Designers\DriverLicenseActivityDesigner.xaml">
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="Designers\HkMacauExitentrypermitActivityDesigner.xaml">
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="Designers\HouseholdRegisterActivityDesigner.xaml">
       <Generator>XamlIntelliSenseFileGenerator</Generator>
     </Page>
     <Page Include="Designers\IdCardActivityDesigner.xaml">
@@ -97,7 +121,31 @@
     <Page Include="Designers\OcrScopeDesigner.xaml">
       <Generator>XamlIntelliSenseFileGenerator</Generator>
     </Page>
+    <Page Include="Designers\PassportActivityDesigner.xaml">
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="Designers\QuotaInvoiceActivityDesigner.xaml">
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="Designers\TaiwanExitentrypermitActivityDesigner.xaml">
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="Designers\TaxiReceiptActivityDesigner.xaml">
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="Designers\TrainTicketActivityDesigner.xaml">
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
     <Page Include="Designers\VatInvoiceActivityDesigner.xaml">
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="Designers\VehicleCertificateActivityDesigner.xaml">
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="Designers\VehicleInvoiceActivityDesigner.xaml">
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="Designers\VehicleLicenseActivityDesigner.xaml">
       <Generator>XamlIntelliSenseFileGenerator</Generator>
     </Page>
     <Page Include="Themes\Icons.xaml">
