@@ -31,8 +31,11 @@
   </PropertyGroup>
   <ItemGroup>
     <None Remove="Designers\BankCardActivityDesigner.xaml" />
+    <None Remove="Designers\BusinessLicenseActivityDesigner.xaml" />
+    <None Remove="Designers\IdCardActivityDesigner.xaml" />
     <None Remove="Designers\MockOcrClientActivityDesigner.xaml" />
     <None Remove="Designers\OcrScopeDesigner.xaml" />
+    <None Remove="Designers\VatInvoiceActivityDesigner.xaml" />
   </ItemGroup>
   <!-- Package Icon -->
   <ItemGroup>
@@ -82,10 +85,19 @@
     <Page Include="Designers\BankCardActivityDesigner.xaml">
       <Generator>XamlIntelliSenseFileGenerator</Generator>
     </Page>
+    <Page Include="Designers\BusinessLicenseActivityDesigner.xaml">
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="Designers\IdCardActivityDesigner.xaml">
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
     <Page Include="Designers\MockOcrClientActivityDesigner.xaml">
       <Generator>XamlIntelliSenseFileGenerator</Generator>
     </Page>
     <Page Include="Designers\OcrScopeDesigner.xaml">
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="Designers\VatInvoiceActivityDesigner.xaml">
       <Generator>XamlIntelliSenseFileGenerator</Generator>
     </Page>
     <Page Include="Themes\Icons.xaml">

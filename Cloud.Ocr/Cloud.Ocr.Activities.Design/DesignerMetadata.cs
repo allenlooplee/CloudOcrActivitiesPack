@@ -32,6 +32,17 @@ namespace Cloud.Ocr.Activities.Design
             builder.AddCustomAttributes(typeof(MockOcrClientActivity), new DesignerAttribute(typeof(MockOcrClientActivityDesigner)));
             builder.AddCustomAttributes(typeof(MockOcrClientActivity), new HelpKeywordAttribute(""));
 
+            builder.AddCustomAttributes(typeof(IdCardActivity), categoryAttribute);
+            builder.AddCustomAttributes(typeof(IdCardActivity), new DesignerAttribute(typeof(IdCardActivityDesigner)));
+            builder.AddCustomAttributes(typeof(IdCardActivity), new HelpKeywordAttribute(""));
+
+            builder.AddCustomAttributes(typeof(BusinessLicenseActivity), categoryAttribute);
+            builder.AddCustomAttributes(typeof(BusinessLicenseActivity), new DesignerAttribute(typeof(BusinessLicenseActivityDesigner)));
+            builder.AddCustomAttributes(typeof(BusinessLicenseActivity), new HelpKeywordAttribute(""));
+
+            builder.AddCustomAttributes(typeof(VatInvoiceActivity), categoryAttribute);
+            builder.AddCustomAttributes(typeof(VatInvoiceActivity), new DesignerAttribute(typeof(VatInvoiceActivityDesigner)));
+            builder.AddCustomAttributes(typeof(VatInvoiceActivity), new HelpKeywordAttribute(""));
 
             MetadataStore.AddAttributeTable(builder.CreateTable());
         }

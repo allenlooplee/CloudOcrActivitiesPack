@@ -124,6 +124,24 @@ namespace Cloud.Ocr.Activities.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Returns the recognized values of a business license..
+        /// </summary>
+        public static string BusinessLicenseActivity_Description {
+            get {
+                return ResourceManager.GetString("BusinessLicenseActivity_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Business License.
+        /// </summary>
+        public static string BusinessLicenseActivity_DisplayName {
+            get {
+                return ResourceManager.GetString("BusinessLicenseActivity_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Common.
         /// </summary>
         public static string Common_Category {
@@ -156,6 +174,24 @@ namespace Cloud.Ocr.Activities.Properties {
         public static string Do {
             get {
                 return ResourceManager.GetString("Do", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Returns the recognized values of a ID card..
+        /// </summary>
+        public static string IdCardActivity_Description {
+            get {
+                return ResourceManager.GetString("IdCardActivity_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ID Card.
+        /// </summary>
+        public static string IdCardActivity_DisplayName {
+            get {
+                return ResourceManager.GetString("IdCardActivity_DisplayName", resourceCulture);
             }
         }
         
@@ -282,6 +318,24 @@ namespace Cloud.Ocr.Activities.Properties {
         public static string ValidationValue_Error {
             get {
                 return ResourceManager.GetString("ValidationValue_Error", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Returns the recognized values of a VAT invoice..
+        /// </summary>
+        public static string VatInvoiceActivity_Description {
+            get {
+                return ResourceManager.GetString("VatInvoiceActivity_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to VAT Invoice.
+        /// </summary>
+        public static string VatInvoiceActivity_DisplayName {
+            get {
+                return ResourceManager.GetString("VatInvoiceActivity_DisplayName", resourceCulture);
             }
         }
     }

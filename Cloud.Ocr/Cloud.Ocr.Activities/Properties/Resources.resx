@@ -213,4 +213,28 @@
     <value>Injects MockOcrClient as IOcrClient in ObjectContainer.</value>
     <comment>activity description</comment>
   </data>
+  <data name="IdCardActivity_Description" xml:space="preserve">
+    <value>Returns the recognized values of a ID card.</value>
+    <comment>activity description</comment>
+  </data>
+  <data name="IdCardActivity_DisplayName" xml:space="preserve">
+    <value>ID Card</value>
+    <comment>activity name</comment>
+  </data>
+  <data name="BusinessLicenseActivity_Description" xml:space="preserve">
+    <value>Returns the recognized values of a business license.</value>
+    <comment>activity description</comment>
+  </data>
+  <data name="BusinessLicenseActivity_DisplayName" xml:space="preserve">
+    <value>Business License</value>
+    <comment>activity name</comment>
+  </data>
+  <data name="VatInvoiceActivity_Description" xml:space="preserve">
+    <value>Returns the recognized values of a VAT invoice.</value>
+    <comment>activity description</comment>
+  </data>
+  <data name="VatInvoiceActivity_DisplayName" xml:space="preserve">
+    <value>VAT Invoice</value>
+    <comment>activity name</comment>
+  </data>
 </root>
