@@ -28,7 +28,7 @@
                                        AutomationProperties.AutomationId="ClientActivity"
                                        MinWidth="400"
                                        Margin="0,10"
-                                       Item="{Binding Path=ModelItem.OcrClient.Handler, Mode=TwoWay}"
+                                       Item="{Binding Path=ModelItem.Head, Mode=TwoWay}"
                                        AllowedItemType="{x:Type sa:Activity}"
                                        HintText="{x:Static p:Resources.DropActivityHere}" />
             <Separator/>
@@ -36,7 +36,7 @@
                                        AutomationProperties.AutomationId="ActionsActivity"
                                        MinWidth="400"
                                        Margin="0,10"
-                                       Item="{Binding Path=ModelItem.Body.Handler, Mode=TwoWay}"
+                                       Item="{Binding Path=ModelItem.Body, Mode=TwoWay}"
                                        AllowedItemType="{x:Type sa:Activity}"
                                        HintText="{x:Static p:Resources.DropActivityHere}" />
 
