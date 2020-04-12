@@ -161,14 +161,14 @@
                       </Sequence>
                     </ActivityAction>
                   </coa:OcrScope.Body>
-                  <coa:OcrScope.OcrClient>
+                  <coa:OcrScope.Head>
                     <ActivityAction x:TypeArguments="usa:IObjectContainer">
                       <ActivityAction.Argument>
                         <DelegateInArgument x:TypeArguments="usa:IObjectContainer" Name="OcrScope" />
                       </ActivityAction.Argument>
                       <coa:MockOcrClientActivity ContinueOnError="{x:Null}" DisplayName="Mock OCR" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="MockOcrClientActivity_1" />
                     </ActivityAction>
-                  </coa:OcrScope.OcrClient>
+                  </coa:OcrScope.Head>
                 </coa:OcrScope>
               </Sequence>
               <FlowStep.Next>
