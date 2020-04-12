@@ -119,14 +119,14 @@
             </Sequence>
           </ActivityAction>
         </coa:OcrScope.Body>
-        <coa:OcrScope.OcrClient>
+        <coa:OcrScope.Head>
           <ActivityAction x:TypeArguments="usa:IObjectContainer">
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="usa:IObjectContainer" Name="OcrScope" />
             </ActivityAction.Argument>
             <coa:MockOcrClientActivity ContinueOnError="{x:Null}" DisplayName="Mock OCR" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="MockOcrClientActivity_1" />
           </ActivityAction>
-        </coa:OcrScope.OcrClient>
+        </coa:OcrScope.Head>
       </coa:OcrScope>
     </Sequence>
     <Sequence sap2010:Annotation.AnnotationText="Purpose of the assert stage is to determine if test have passed or not. &#xA;&#xA;Here we use custom activity called Assert Unit Tests (make sure that you have installed package Custom.Activities.VariableComparer)&#xA;&#xA;NOTE: Recommended way to use Assert Unit Test activity is to use Assert methods like Assert.IsNotNull(actual) or Assert.AreEqual(expected,actual).&#xA;&#xA;NOTE (Not recommended): It is also possible to enter any boolean expression. In this case if entered expression returns as false only generic message will be logged in TestingFramework logs. This can be useful if some custom comparison is needed that is not available as a method of Assert class." DisplayName="Assert" sap:VirtualizedContainerService.HintSize="476,544" sap2010:WorkflowViewState.IdRef="Sequence_6">

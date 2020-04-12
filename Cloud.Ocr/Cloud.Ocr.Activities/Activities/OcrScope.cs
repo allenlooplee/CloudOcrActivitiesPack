@@ -19,7 +19,7 @@ namespace Cloud.Ocr.Activities
         #region Properties
 
         [Browsable(false)]
-        public ActivityAction<IObjectContainer> OcrClient { get; set; }
+        public ActivityAction<IObjectContainer> Head { get; set; }
 
         [Browsable(false)]
         public ActivityAction<IObjectContainer​> Body { get; set; }
@@ -47,7 +47,7 @@ namespace Cloud.Ocr.Activities
         {
             _objectContainer = objectContainer;
 
-            OcrClient = new ActivityAction<IObjectContainer>
+            Head = new ActivityAction<IObjectContainer>
             {
                 Argument = new DelegateInArgument<IObjectContainer>(ParentContainerPropertyTag)
             };
@@ -71,23 +71,16 @@ namespace Cloud.Ocr.Activities
 
         protected override void CacheMetadata(NativeActivityMetadata metadata)
         {
-
             base.CacheMetadata(metadata);
         }
 
         protected override async Task<Action<NativeActivityContext>> ExecuteAsync(NativeActivityContext context, CancellationToken cancellationToken)
         {
-            // Schedule the client to inject an IOcrClient object.
-            if (OcrClient != null && OcrClient.Handler != null)
-            {
-                context.ScheduleAction<IObjectContainer>(OcrClient, _objectContainer, OnCompleted, OnFaulted);
-            }
-
             return (ctx) => {
                 // Schedule child activities
-                if (Body != null)
+                if (Head != null && Head.Handler != null)
                 {
-                    ctx.ScheduleAction<IObjectContainer>(Body, _objectContainer, OnCompleted, OnFaulted);
+                    context.ScheduleAction<IObjectContainer>(Head, _objectContainer, OnHeadCompleted, OnFaulted);
                 }
             };
         }
@@ -103,7 +96,15 @@ namespace Cloud.Ocr.Activities
             Cleanup();
         }
 
-        private void OnCompleted(NativeActivityContext context, ActivityInstance completedInstance)
+        private void OnHeadCompleted(NativeActivityContext context, ActivityInstance completedInstance)
+        {
+            if (Body != null && Body.Handler != null)
+            {
+                context.ScheduleAction<IObjectContainer>(Body, _objectContainer, OnBodyCompleted, OnFaulted);
+            }
+        }
+
+        private void OnBodyCompleted(NativeActivityContext context, ActivityInstance completedInstance)
         {
             Cleanup();
         }
