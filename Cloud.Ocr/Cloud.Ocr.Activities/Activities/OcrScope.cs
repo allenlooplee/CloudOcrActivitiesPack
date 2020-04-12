@@ -19,10 +19,10 @@ namespace Cloud.Ocr.Activities
         #region Properties
 
         [Browsable(false)]
-        public Activity Head { get; set; }
+        public ActivityAction<IObjectContainer> OcrClient { get; set; }
 
         [Browsable(false)]
-        public Activity Body { get; set; }
+        public ActivityAction<IObjectContainer​> Body { get; set; }
 
         /// <summary>
         /// If set, continue executing the remaining activities even if the current activity has failed.
@@ -47,7 +47,16 @@ namespace Cloud.Ocr.Activities
         {
             _objectContainer = objectContainer;
 
-            Body = new Sequence { DisplayName = Resources.Do };
+            OcrClient = new ActivityAction<IObjectContainer>
+            {
+                Argument = new DelegateInArgument<IObjectContainer>(ParentContainerPropertyTag)
+            };
+
+            Body = new ActivityAction<IObjectContainer>
+            {
+                Argument = new DelegateInArgument<IObjectContainer> (ParentContainerPropertyTag),
+                Handler = new Sequence { DisplayName = Resources.Do }
+            };
         }
 
         public OcrScope() : this(new ObjectContainer())
@@ -68,20 +77,17 @@ namespace Cloud.Ocr.Activities
 
         protected override async Task<Action<NativeActivityContext>> ExecuteAsync(NativeActivityContext context, CancellationToken cancellationToken)
         {
+            // Schedule the client to inject an IOcrClient object.
+            if (OcrClient != null && OcrClient.Handler != null)
+            {
+                context.ScheduleAction<IObjectContainer>(OcrClient, _objectContainer, OnCompleted, OnFaulted);
+            }
+
             return (ctx) => {
                 // Schedule child activities
-                if (Head != null && Body != null)
+                if (Body != null)
                 {
-                    var children = new ActivityAction<IObjectContainer>
-                    {
-                        Argument = new DelegateInArgument<IObjectContainer>(ParentContainerPropertyTag),
-                        Handler = new Sequence
-                        {
-                            Activities = { Head, Body }
-                        }
-                    };
-
-                    ctx.ScheduleAction<IObjectContainer>(children, _objectContainer, OnCompleted, OnFaulted);
+                    ctx.ScheduleAction<IObjectContainer>(Body, _objectContainer, OnCompleted, OnFaulted);
                 }
             };
         }
