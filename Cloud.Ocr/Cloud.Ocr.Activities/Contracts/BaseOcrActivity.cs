@@ -3,6 +3,7 @@ using Cloud.Ocr.Activities.Properties;
 using Newtonsoft.Json.Linq;
 using System;
 using System.Activities;
+using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
 using UiPath.Shared.Activities;
@@ -55,6 +56,11 @@ namespace Cloud.Ocr.Contracts
 
         protected abstract string GetRecognizerName();
 
+        protected virtual Dictionary<string, object> GetRecognizerOptions(AsyncCodeActivityContext context)
+        {
+            return null;
+        }
+
         protected override async Task<Action<AsyncCodeActivityContext>> ExecuteAsync(AsyncCodeActivityContext context, CancellationToken cancellationToken)
         {
             // Inputs
@@ -66,7 +72,8 @@ namespace Cloud.Ocr.Contracts
             // Add execution logic HERE
             ///////////////////////////
             var recognizerName = GetRecognizerName();
-            var result = await ocrClient.RecognizeAsync(recognizerName, imagepath);
+            var recognizerOptions = GetRecognizerOptions(context);
+            var result = await ocrClient.RecognizeAsync(recognizerName, imagepath, recognizerOptions);
 
             // Outputs
             return (ctx) =>
