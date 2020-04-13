@@ -7,11 +7,19 @@ namespace Cloud.Ocr.Models
 {
     public class MockOcrClient : IOcrClient
     {
-        public string Name => "Mock OCR";
+        public MockOcrClient(string content)
+        {
+            Name = "Mock OCR";
+            _result = JObject.Parse(content ?? "{ 'result': 'mock' }");
+        }
+
+        public string Name { get; }
 
         public async Task<JObject> RecognizeAsync(string recognizerName, string imagePath, Dictionary<string, object> options = null)
         {
-            return new JObject(new JProperty("result", "mock"));
+            return _result;
         }
+
+        private JObject _result;
     }
 }

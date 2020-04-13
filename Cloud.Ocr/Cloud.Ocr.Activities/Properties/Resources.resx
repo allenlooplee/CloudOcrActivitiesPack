@@ -333,4 +333,10 @@
     <value>Returns the recognized values of a vehicle certificate.</value>
     <comment>activity description</comment>
   </data>
+  <data name="MockOcrClientActivity_Content_Description" xml:space="preserve">
+    <value>The JSON string to return as JObject. If you don't provide a value, a default JObject will be returned.</value>
+  </data>
+  <data name="MockOcrClientActivity_Content_DisplayName" xml:space="preserve">
+    <value>Content</value>
+  </data>
 </root>

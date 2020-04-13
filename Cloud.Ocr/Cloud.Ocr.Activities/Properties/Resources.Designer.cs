@@ -277,6 +277,24 @@ namespace Cloud.Ocr.Activities.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to The JSON string to return as JObject. If you don&apos;t provide a value, a default JObject will be returned..
+        /// </summary>
+        public static string MockOcrClientActivity_Content_Description {
+            get {
+                return ResourceManager.GetString("MockOcrClientActivity_Content_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Content.
+        /// </summary>
+        public static string MockOcrClientActivity_Content_DisplayName {
+            get {
+                return ResourceManager.GetString("MockOcrClientActivity_Content_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Injects MockOcrClient as IOcrClient in ObjectContainer..
         /// </summary>
         public static string MockOcrClientActivity_Description {

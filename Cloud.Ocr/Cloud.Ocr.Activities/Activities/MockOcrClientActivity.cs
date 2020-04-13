@@ -15,9 +15,15 @@ namespace Cloud.Ocr.Activities
     [LocalizedDescription(nameof(Resources.MockOcrClientActivity_Description))]
     public class MockOcrClientActivity : BaseOcrClientActivity
     {
+        [LocalizedDisplayName(nameof(Resources.MockOcrClientActivity_Content_DisplayName))]
+        [LocalizedDescription(nameof(Resources.MockOcrClientActivity_Content_Description))]
+        [LocalizedCategory(nameof(Resources.Input_Category))]
+        public InArgument<string> Content { get; set; }
+
         protected override IOcrClient GetOcrClient(AsyncCodeActivityContext context)
         {
-            return new MockOcrClient();
+            var content = Content.Get(context);
+            return new MockOcrClient(content);
         }
     }
 }
