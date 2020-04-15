@@ -250,6 +250,24 @@ namespace Cloud.Ocr.Activities.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Indicate which side of the card to recognize..
+        /// </summary>
+        public static string IdCardActivity_CardSide_Description {
+            get {
+                return ResourceManager.GetString("IdCardActivity_CardSide_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to CardSide.
+        /// </summary>
+        public static string IdCardActivity_CardSide_DisplayName {
+            get {
+                return ResourceManager.GetString("IdCardActivity_CardSide_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Returns the recognized values of a ID card..
         /// </summary>
         public static string IdCardActivity_Description {
@@ -273,6 +291,24 @@ namespace Cloud.Ocr.Activities.Properties {
         public static string Input_Category {
             get {
                 return ResourceManager.GetString("Input_Category", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The JSON string to return as JObject. If you don&apos;t provide a value, a default JObject will be returned..
+        /// </summary>
+        public static string MockOcrClientActivity_Content_Description {
+            get {
+                return ResourceManager.GetString("MockOcrClientActivity_Content_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Content.
+        /// </summary>
+        public static string MockOcrClientActivity_Content_DisplayName {
+            get {
+                return ResourceManager.GetString("MockOcrClientActivity_Content_DisplayName", resourceCulture);
             }
         }
         
