@@ -250,6 +250,24 @@ namespace Cloud.Ocr.Activities.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Indicate which side of the card to recognize..
+        /// </summary>
+        public static string IdCardActivity_CardSide_Description {
+            get {
+                return ResourceManager.GetString("IdCardActivity_CardSide_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to CardSide.
+        /// </summary>
+        public static string IdCardActivity_CardSide_DisplayName {
+            get {
+                return ResourceManager.GetString("IdCardActivity_CardSide_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Returns the recognized values of a ID card..
         /// </summary>
         public static string IdCardActivity_Description {

@@ -339,4 +339,10 @@
   <data name="MockOcrClientActivity_Content_DisplayName" xml:space="preserve">
     <value>Content</value>
   </data>
+  <data name="IdCardActivity_CardSide_Description" xml:space="preserve">
+    <value>Indicate which side of the card to recognize.</value>
+  </data>
+  <data name="IdCardActivity_CardSide_DisplayName" xml:space="preserve">
+    <value>CardSide</value>
+  </data>
 </root>
