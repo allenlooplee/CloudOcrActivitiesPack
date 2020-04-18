@@ -4,6 +4,10 @@
 
 云可扩展OCR活动包采用全新的架构，为扩展而生，最大限度重用代码，让使用云OCR的活动包可以轻松创建出来。云可扩展OCR活动包可以看作[百度OCR活动包](https://github.com/allenlooplee/BaiduOcrActivitiesPack)和[合合OCR活动包](https://github.com/allenlooplee/CcintOcrActivitiesPack)的一个自然演变结果，它让多套OCR活动包共享一套OCR活动（如BankCardActivity）成为可能，为未来加入其他OCR服务打下基础，同时让现有流程更换OCR服务变得容易。
 
+## 架构概览
+
+![架构](https://github.com/allenlooplee/CloudOcrActivitiesPack/blob/master/docs/images/cloud-ocr-architecture.png)
+
 ## OCR活动清单
 
 本活动包支持以下16个文字识别活动，用于常见的票据、卡证和汽车场景：
