@@ -28,6 +28,8 @@
 16|车辆合格证识别|汽车场景|[VehicleCertificateActivity](https://github.com/allenlooplee/CloudOcrActivitiesPack/blob/master/Cloud.Ocr/Cloud.Ocr.Activities/Activities/VehicleCertificateActivity.cs)
 
 ## 其他代码库和参考资料
+* [百度OCR活动包](https://github.com/allenlooplee/BaiduOcrActivitiesPack)
+* [合合OCR活动包](https://github.com/allenlooplee/CcintOcrActivitiesPack)
 * [JSON.NET](https://github.com/JamesNK/Newtonsoft.Json)
 * [How to Create Activities](https://docs.uipath.com/integrations/docs/how-to-create-activities)
 * [Testing Framework for UiPath](https://connect.uipath.com/marketplace/components/uipath-testing-framework)
