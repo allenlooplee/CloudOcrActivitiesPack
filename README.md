@@ -34,6 +34,7 @@
 ## 其他代码库和参考资料
 * [百度OCR活动包](https://github.com/allenlooplee/BaiduOcrActivitiesPack)
 * [合合OCR活动包](https://github.com/allenlooplee/CcintOcrActivitiesPack)
+* [腾讯OCR活动包](https://github.com/allenlooplee/TencentOcrActivitiesPack)
 * [JSON.NET](https://github.com/JamesNK/Newtonsoft.Json)
 * [How to Create Activities](https://docs.uipath.com/integrations/docs/how-to-create-activities)
 * [Testing Framework for UiPath](https://connect.uipath.com/marketplace/components/uipath-testing-framework)
