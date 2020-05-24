@@ -322,7 +322,7 @@ namespace Cloud.Ocr.Activities.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Mock OCR.
+        ///   Looks up a localized string similar to Mock OCR Client.
         /// </summary>
         public static string MockOcrClientActivity_DisplayName {
             get {

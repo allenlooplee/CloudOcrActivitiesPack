@@ -3,7 +3,7 @@
   "description": "Create a process that uses Cloud OCR Activities Pack for recognition of China-specific invoices, cards, and cars scenarios.",
   "main": "Main.xaml",
   "dependencies": {
-    "Cloud.Ocr.Activities": "0.2.0.415144644",
+    "Cloud.Ocr.Activities": "[0.2.0]",
     "UiPath.Excel.Activities": "[2.7.2]",
     "UiPath.Mail.Activities": "[1.7.2]",
     "UiPath.System.Activities": "[19.10.1]",
@@ -31,7 +31,7 @@
       "includeOriginalXaml": false,
       "privateWorkflows": []
     },
-    "fileInfos": []
+    "fileInfoCollection": []
   },
   "expressionLanguage": "VisualBasic"
 }

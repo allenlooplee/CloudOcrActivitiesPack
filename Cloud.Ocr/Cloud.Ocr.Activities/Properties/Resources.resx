@@ -206,7 +206,7 @@
     <comment>activity description</comment>
   </data>
   <data name="MockOcrClientActivity_DisplayName" xml:space="preserve">
-    <value>Mock OCR</value>
+    <value>Mock OCR Client</value>
     <comment>activity name</comment>
   </data>
   <data name="MockOcrClientActivity_Description" xml:space="preserve">

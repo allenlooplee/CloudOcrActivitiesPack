@@ -61,11 +61,20 @@ namespace Cloud.Ocr.Activities.Design.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Cloud.OCR.
+        ///   Looks up a localized string similar to Cloud OCR.
         /// </summary>
         public static string Category {
             get {
                 return ResourceManager.GetString("Category", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cloud OCR.Clients.
+        /// </summary>
+        public static string ClientsCategory {
+            get {
+                return ResourceManager.GetString("ClientsCategory", resourceCulture);
             }
         }
         
@@ -111,6 +120,15 @@ namespace Cloud.Ocr.Activities.Design.Properties {
         public static string Editing {
             get {
                 return ResourceManager.GetString("Editing", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cloud OCR.Recognizers.
+        /// </summary>
+        public static string RecognizersCategory {
+            get {
+                return ResourceManager.GetString("RecognizersCategory", resourceCulture);
             }
         }
     }
