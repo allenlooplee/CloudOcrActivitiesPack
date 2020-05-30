@@ -40,6 +40,7 @@
 * [How to Create Activities](https://docs.uipath.com/integrations/docs/how-to-create-activities)
 * [Testing Framework for UiPath](https://connect.uipath.com/marketplace/components/uipath-testing-framework)
 * [Windows Workflow Foundation](https://docs.microsoft.com/en-us/dotnet/framework/windows-workflow-foundation/)
+* [RPA开发与应用](https://github.com/allenlooplee/RPABook)
 
 ## 许可协议
 
